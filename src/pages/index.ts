@@ -1,2 +1,2 @@
 export * from './intro';
-export * from './aboutme';
+export * from './aboutMe';

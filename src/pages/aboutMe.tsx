@@ -1,4 +1,3 @@
-import React from "react";
 // Icons
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
