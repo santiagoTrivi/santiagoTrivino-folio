@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://github.com/santiagoTrivi/santiagoTrivino-folio",
+  base: "https://santiagoTrivi.github.io/santiagoTrivino-folio/",
   plugins: [react()],
   resolve: {
     alias: [
