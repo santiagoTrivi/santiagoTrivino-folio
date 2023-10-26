@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 export const AboutMe = () => {
   return (
-    <div id='aboutMe' className="p-8 flex flex-col gap-8 bg-gray-100">
+    <section id='aboutMe' className="p-8 flex flex-col gap-8 bg-gray-100">
       <h1 className="text-[40px] text-center font-black">
         Who I am
       </h1>
@@ -27,7 +27,7 @@ export const AboutMe = () => {
           
           <img
             src="profilepicture.jpg"
-            className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full ring-4 ring-primary p-1 bg-white"
+            className="w-40 h-40 md:w-40 md:h-40 object-cover rounded-full ring-4 ring-primary p-1 bg-white"
           />
           
         </div>
@@ -36,7 +36,7 @@ export const AboutMe = () => {
           
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

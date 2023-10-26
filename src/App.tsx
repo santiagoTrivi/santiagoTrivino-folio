@@ -1,5 +1,5 @@
 import { Header } from "@/components"
-import { AboutMe, Intro } from "@/pages"
+import { AboutMe, Intro, Skills } from "@/pages"
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Intro/>
       <AboutMe/>
+      <Skills />
 
     </div>
   )

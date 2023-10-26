@@ -1,4 +1,4 @@
-
+import { personalInfo } from "@/shared";
 import {
   RiStarFill,
 } from "react-icons/ri";
@@ -10,17 +10,14 @@ export const Intro = () => {
       <div className="md:col-span-5 flex items-center justify-center p-8 xl:p-16">
         <div className="flex flex-col gap-8">
           <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem]">
-            Hi there <br />
-            I am Santiago, Backend Developer
-            
+            {personalInfo.greeting}
           </h1>
           <p className="text-gray-500 text-2xl leading-[2.5rem]">
-            Help find solutions with intitutive and in accordance with client
-            business goals. we provide a high-quality services.
+            {personalInfo.description}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4">
             <button className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl">
-              Contact Us
+              My resume
             </button>
             
           </div>
