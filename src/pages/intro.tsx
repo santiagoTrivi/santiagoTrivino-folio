@@ -1,7 +1,5 @@
 import { personalInfo } from "@/shared";
-import {
-  RiStarFill,
-} from "react-icons/ri";
+import resume from '../assets/CV_resume_Santiago_Trviño_EN.pdf';
 
 export const Intro = () => {
   return (
@@ -16,9 +14,10 @@ export const Intro = () => {
             {personalInfo.description}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <button className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl">
-              My resume
-            </button>
+          <a href={resume} className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl text-center">
+            My resume
+          </a>
+
             
           </div>
         </div>
@@ -33,12 +32,10 @@ export const Intro = () => {
           />
           <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">
                 
-            <h2 className="text-xl font-bold tracking-[1px] text-gray-800">
-              120 + Employees
+            <h2 className="text-xl font-bold tracking-[1px] flex items-center justify-center text-gray-800">
+              My Stack
             </h2>
-            <div className="flex items-center gap-2 text-lg text-gray-500">
-              <RiStarFill className="text-primary" /> 5.0 (3.1k Reviews)
-            </div>
+            
             <div className="absolute -right-12 -bottom-12 -z-10">
               
             </div>
