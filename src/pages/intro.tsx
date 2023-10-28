@@ -31,7 +31,7 @@ export const Intro = () => {
         {/* Content image */}
         <div>
           <img
-            src="backendDev.png"
+            src="techNoBg.png"
             className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] object-cover xl:-mt-28"
           />
           <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">

@@ -6,6 +6,7 @@ export const skillsList = [
     'Nest.Js',
     'Typescript',
     'Javascript',
+    'Jest',
     'SQL',
     'NoSQL',
     'MongoDB',
