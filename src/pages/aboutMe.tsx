@@ -1,13 +1,12 @@
 // Icons
+import HeadingText from "@/components/HeadingText";
 import { personalInfo } from "@/shared";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 export const AboutMe = () => {
   return (
     <section id='aboutMe' className="p-8 flex flex-col gap-8 bg-gray-100">
-      <h1 className="text-[40px] text-center font-black">
-        Who I am
-      </h1>
+      <HeadingText>Who I am </HeadingText>
       <div className="flex justify-center gap-4">
         <span className="text-5xl text-primary">
           <RiDoubleQuotesL />
