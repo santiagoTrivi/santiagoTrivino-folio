@@ -1,8 +1,12 @@
 import { personalInfo } from "@/shared";
 import resumeEN from '../assets/CV_resume_Santiago_Trviño_EN.pdf';
 import resumeES from '../assets/CV_resume_Santiago_Trviño_ES.pdf';
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
+import { ButtonATag } from "@/components";
 
 export const Intro = () => {
+  const { networkLinks } = personalInfo;
+
   return (
     <section id="home" className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">
       {/* Information */}
@@ -15,13 +19,29 @@ export const Intro = () => {
             {personalInfo.description}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4">
-          <a href={resumeEN} className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl text-center">
-            My resume
-          </a>
-          <a href={resumeES} className="w-full xl:w-auto bg-white text-black py-2 px-8 rounded-xl border border-gray-400 text-xl text-center">
-            Mi cv
-          </a>
-
+            <ButtonATag className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl text-center"
+              href={resumeEN}
+            >
+              My resume
+            </ButtonATag>
+            <ButtonATag className="w-full xl:w-auto bg-white text-black py-2 px-8 rounded-xl border border-gray-400 text-xl text-center"
+              href={resumeES}
+            >
+              Mi cv
+            </ButtonATag>
+          
+            <div className="flex items-center p-2">
+            <ButtonATag 
+              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+              href={networkLinks.linkedin}>
+              <FaLinkedin/>
+            </ButtonATag>
+            <ButtonATag 
+              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 ml-2" 
+              href={networkLinks.github}>
+              <FaGithub/>
+            </ButtonATag>
+          </div>
             
           </div>
         </div>
@@ -39,7 +59,7 @@ export const Intro = () => {
             <h2 className="text-xl font-bold tracking-[1px] flex items-center justify-center text-gray-800">
               Vite | React Portfolio
             </h2>
-            
+               
             <div className="absolute -right-12 -bottom-12 -z-10">
               
             </div>

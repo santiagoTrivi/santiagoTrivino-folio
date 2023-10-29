@@ -1,4 +1,4 @@
-import HeadingText from "@/components/HeadingText"
+import { HeadingText } from "@/components"
 import { skillsList } from "@/shared"
 import { motion } from "framer-motion"
 

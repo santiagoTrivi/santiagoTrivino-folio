@@ -1,5 +1,5 @@
 // Icons
-import HeadingText from "@/components/HeadingText";
+import { HeadingText } from "@/components";
 import { personalInfo } from "@/shared";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
