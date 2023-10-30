@@ -1,4 +1,4 @@
-import { ButtonATag, HeadingText } from "@/components"
+import { BadgeComponent, ButtonATag, HeadingText } from "@/components"
 import { CreatedProjects } from '@/shared'
 import { FaGithub } from "react-icons/fa";
 
@@ -7,10 +7,10 @@ export const Projects = () => {
 
 
     return (
-        <section id='projects' className="grid grid-cols-1 gap-10 content-center">
+        <section id='projects' className="flex flex-col items-center px-4">
             <HeadingText>Projects</HeadingText>
 
-            <div className="m-10">
+            <div className="">
 
                 <div className="bg-white w-full min-h-[90vh] gap-4 flex-wrap flex justify-center items-center">
 
@@ -21,11 +21,16 @@ export const Projects = () => {
                                 <h2 className="font-bold text-lg mb-2 ">{project.heading}</h2>
                                 <p className="text-sm text-gray-600">{project.description}</p>
                             </div>
-        
+                            <div className="grid grid-cols-3 gap-1 content-start">
+                                {project.techStack.map(stack => (
+                                    <BadgeComponent>{stack}</BadgeComponent>
+                                ))}
+                                
+                            </div>
                             <div className="m-2 flex items-center">
                                 
                                 <ButtonATag 
-                                    className="text-white bg-zinc-900 px-3 py-1 rounded-md hover:bg-zinc-950"
+                                    className="text-white bg-gray-900 px-3 py-1 rounded-md hover:bg-gray-950"
                                     role="button"
                                     href={project.demoUrl}
                                 >

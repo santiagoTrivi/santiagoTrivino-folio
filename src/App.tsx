@@ -1,5 +1,5 @@
 import { Header } from "@/components"
-import { AboutMe, Intro, Projects, Skills } from "@/pages"
+import { AboutMe, Contact, Footer, Intro, Projects, Skills } from "@/pages"
 
 function App() {
 
@@ -11,6 +11,8 @@ function App() {
       <AboutMe/>
       <Skills />
       <Projects />
+      <Contact/>
+      <Footer/>
 
     </div>
   )

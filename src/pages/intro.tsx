@@ -19,12 +19,14 @@ export const Intro = () => {
             {personalInfo.description}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <ButtonATag className="w-full xl:w-auto bg-black text-white py-2 px-8 rounded-xl text-xl text-center"
+            <ButtonATag 
+              className="w-full xl:w-auto bg-gray-900 text-white py-2 px-8 rounded-xl text-xl text-center hover:bg-gray-950"
               href={resumeEN}
             >
               My resume
             </ButtonATag>
-            <ButtonATag className="w-full xl:w-auto bg-white text-black py-2 px-8 rounded-xl border border-gray-400 text-xl text-center"
+            <ButtonATag 
+              className="w-full xl:w-auto bg-white text-gray-900 py-2 px-8 rounded-xl border border-gray-400 text-xl text-center hover:text-gray-950"
               href={resumeES}
             >
               Mi cv
