@@ -35,10 +35,14 @@ export const Contact = () => {
                     className="h-14 px-4 rounded-lg border border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" 
                     type="email" 
                     placeholder="Your email"
+                    required
+                    maxLength={500}
                     />
                     <textarea 
                     className="h-52 my-3 rounded-lg border border-black/10 p-4"
                     placeholder="Your message"
+                    required
+                    maxLength={500}
                     />
                     <ButtonSubmit/>
                 </form>
