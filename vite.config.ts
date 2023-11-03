@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
@@ -23,6 +23,10 @@ export default defineConfig({
       {
         find: '@shared',
         replacement: path.resolve(__dirname, 'src/shared')
+      },
+      {
+        find: '@email',
+        replacement: path.resolve(__dirname, 'src/email')
       }
     ]
   }

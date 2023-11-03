@@ -1,11 +1,37 @@
 import { ButtonSubmit, HeadingText } from "@/components"
+import { Email, sendEmail } from "@/email"
 import { personalInfo } from "@/shared"
 import { motion } from "framer-motion"
+import { useState } from "react"
+import toast, { Toaster } from "react-hot-toast"
 
 
 export const Contact = () => {
 
+    const [state, setState] = useState<Email>({
+        message: '',
+        from_email: ''
+    })
 
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        
+        const {name, value} = event.target;
+
+        setState(prevState => ({...prevState, [name]: value}))
+    }
+
+    const OnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+        const {data, error} = await sendEmail(state);
+
+        if(error){
+            toast.error('something went wrong')
+            return;
+        }
+        
+        toast.success('Email sent successfully')
+    }
+    
     return(
         <motion.section 
         id="contact" 
@@ -29,20 +55,31 @@ export const Contact = () => {
                     <a className="underline" href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>{' '}
                     or through this form.
                 </p>
+                <Toaster />
+                <form 
+                
+                className="mt-10 flex flex-col dark:text-black"
 
-                <form className="mt-10 flex flex-col dark:text-black">
+                onSubmit={OnSubmit}
+                >
                     <input 
                     className="h-14 px-4 rounded-lg border border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" 
-                    type="email" 
+                    type="email"
+                    name="from_email" 
                     placeholder="Your email"
                     required
                     maxLength={500}
+                    onChange={handleChange}
+                    value={state.from_email}
                     />
                     <textarea 
                     className="h-52 my-3 rounded-lg border border-black/10 p-4"
                     placeholder="Your message"
+                    name="message"
                     required
                     maxLength={500}
+                    onChange={handleChange}
+                    value={state.message}
                     />
                     <ButtonSubmit/>
                 </form>

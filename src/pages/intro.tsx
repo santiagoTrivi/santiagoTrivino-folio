@@ -34,12 +34,12 @@ export const Intro = () => {
           
             <div className="flex items-center p-2">
             <ButtonATag 
-              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full  transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
               href={networkLinks.linkedin}>
               <FaLinkedin/>
             </ButtonATag>
             <ButtonATag 
-              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 ml-2" 
+              className="bg-gray-50 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 ml-2" 
               href={networkLinks.github}>
               <FaGithub/>
             </ButtonATag>

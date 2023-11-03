@@ -1,5 +1,6 @@
 import { BadgeComponent, ButtonATag, HeadingText } from "@/components"
 import { CreatedProjects } from '@/shared'
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 
 
@@ -7,7 +8,22 @@ export const Projects = () => {
 
 
     return (
-        <section id='projects' className="flex flex-col items-center px-4">
+        <motion.section 
+            id='projects' 
+            className="flex flex-col items-center px-4"
+            initial={{
+                opacity:0
+            }}
+            whileInView={{
+                opacity:1,
+            }}
+            transition={{
+                duration:1
+            }}
+            viewport={{
+                once:true
+            }}
+            >
             <HeadingText>Projects</HeadingText>
 
             <div className="">
@@ -45,6 +61,6 @@ export const Projects = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }

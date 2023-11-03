@@ -25,7 +25,8 @@
       "@/*":["src/*"],
       "@/components/*":["src/components/*"],
       "@/pages/*":["src/pages/*"],
-      "@/shared/*":["src/shared/*"]
+      "@/shared/*":["src/shared/*"],
+      "@/email/*":["src/email"]
     }
   },
   "include": ["src"],
