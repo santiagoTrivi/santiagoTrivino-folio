@@ -22,7 +22,7 @@ export const Contact = () => {
 
     const OnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        const {data, error} = await sendEmail(state);
+        const {error} = await sendEmail(state);
 
         if(error){
             toast.error('something went wrong')
