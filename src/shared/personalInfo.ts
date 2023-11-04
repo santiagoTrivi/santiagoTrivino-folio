@@ -25,7 +25,7 @@ interface projectsProps{
 export const CreatedProjects: projectsProps[] = [
     {
         heading: 'Saint Patrick Bank',
-        coverImgUrl: '/proyectBankSaintPatrick.jpeg',
+        coverImgUrl: 'proyectBankSaintPatrick.jpeg',
         description:'A collaborative project served in vercel.',
         demoUrl: 'https://banco-saint-patrick.vercel.app/',
         gitHubRepoUrl: 'https://github.com/santiagoTrivi/proyecto-banco-saint-patrick/',
@@ -33,7 +33,7 @@ export const CreatedProjects: projectsProps[] = [
     },
     {
         heading: 'SantiagoTrivino-folio',
-        coverImgUrl: '/backenddevelopment.png',
+        coverImgUrl: 'backenddevelopment.png',
         description:'My portfolio. Create with React vite and deploy in github pages. ',
         demoUrl: 'https://santiagotrivi.github.io/santiagoTrivino-folio/',
         gitHubRepoUrl: 'https://github.com/santiagoTrivi/santiagoTrivino-folio',
