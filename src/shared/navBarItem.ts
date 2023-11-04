@@ -20,5 +20,9 @@ export const navBarItem: navBarOptions[] = [
     {
         item: 'Projects',
         link: '#projects'
+    },
+    {
+        item: 'Contact me',
+        link: '#contact'
     }
 ]

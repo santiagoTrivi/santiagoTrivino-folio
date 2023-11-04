@@ -28,14 +28,14 @@ export const Projects = () => {
 
             <div className="">
 
-                <div className="bg-white w-full min-h-[90vh] gap-4 flex-wrap flex justify-center items-center">
+                <div className="bg-white w-full min-h-[90vh] gap-4 flex-wrap flex justify-center items-center mb-20">
 
                     {CreatedProjects.map(project => (
-                        <div className="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                            <img className="h-40 object-cover rounded-xl" src={project.coverImgUrl} alt="" />
+                        <div className="w-60 h-[416px] p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                            <img className="h-40 w-96 object-cover rounded-xl" src={project.coverImgUrl} alt="" />
                             <div className="p-2">
                                 <h2 className="font-bold text-lg mb-2 ">{project.heading}</h2>
-                                <p className="text-sm text-gray-600">{project.description}</p>
+                                {<p className="text-sm text-gray-600">{project.description}</p>}
                             </div>
                             <div className="grid grid-cols-3 gap-1 content-start">
                                 {project.techStack.map(stack => (

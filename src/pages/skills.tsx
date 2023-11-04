@@ -24,9 +24,9 @@ export const Skills = () => {
 
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-16">
 
-            <section id="skills" className="min-h-[90vh] p-8 flex flex-col gap-8 items-center justify-center max-w-none xl:max-w-[75vw]">
+            <section id="skills" className="min-h-[90vh] p-8 flex flex-col gap-8 items-center justify-center max-w-none xl:max-w-[65vw]">
 
             <HeadingText>Skills</HeadingText>
 

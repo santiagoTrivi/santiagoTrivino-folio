@@ -25,11 +25,19 @@ interface projectsProps{
 export const CreatedProjects: projectsProps[] = [
     {
         heading: 'Saint Patrick Bank',
-        coverImgUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-        description:'A collaborative project that allows client to register and have multiple cards to make movements.',
+        coverImgUrl: '/proyectBankSaintPatrick.jpeg',
+        description:'A collaborative project served in vercel.',
         demoUrl: 'https://banco-saint-patrick.vercel.app/',
         gitHubRepoUrl: 'https://github.com/santiagoTrivi/proyecto-banco-saint-patrick/',
         techStack: ['Typescript', 'MongoDB', 'Nest.Js', 'Docker']
+    },
+    {
+        heading: 'SantiagoTrivino-folio',
+        coverImgUrl: '/backenddevelopment.png',
+        description:'My portfolio. Create with React vite and deploy in github pages. ',
+        demoUrl: 'https://santiagotrivi.github.io/santiagoTrivino-folio/',
+        gitHubRepoUrl: 'https://github.com/santiagoTrivi/santiagoTrivino-folio',
+        techStack: ['Typescript', 'React', 'Vite', 'Tailwind']
     }
 ]
 

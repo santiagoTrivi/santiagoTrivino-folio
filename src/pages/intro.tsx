@@ -1,6 +1,6 @@
 import { personalInfo } from "@/shared";
-import resumeEN from '../assets/CV_resume_Santiago_Trviño_EN.pdf';
-import resumeES from '../assets/CV_resume_Santiago_Trviño_ES.pdf';
+import resumeEN from '../assets/CV_resume_Santiago_Triviño_EN.pdf';
+import resumeES from '../assets/CV resume_Santiago_Triviño_ES.pdf';
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
 import { ButtonATag } from "@/components";
 
